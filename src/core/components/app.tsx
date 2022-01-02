@@ -1,5 +1,6 @@
 import * as React from 'react';
+import WeekContainer from './weekContainer';
 
 export default function App(): JSX.Element {
-  return <h1>Weather forecast</h1>;
+  return <WeekContainer />;
 }

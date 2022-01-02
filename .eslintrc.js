@@ -15,7 +15,7 @@ module.exports = {
   rules: {
     semi: ['error', 'always'],
     quotes: ['error', 'single'],
-    'max-len': ['error', { code: 120 }],
+    'max-len': ['warn', { code: 125 }],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/prop-types': 'off'
