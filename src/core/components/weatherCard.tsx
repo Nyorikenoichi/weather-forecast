@@ -9,9 +9,7 @@ export default function WeatherCard(props: weatherCardProps): JSX.Element {
       <h3 className="card-title">{props.day.weekday}</h3>
       <i className={iconURL}/>
       <h2 className="card-temperature">{Math.round(props.day.temperature)} °C</h2>
-      <div className="card-body">
-        <p className="card-text">{props.day.weatherDescription}</p>
-      </div>
+      <button className="card-description">{props.day.weatherDescription}</button>
     </div>
   );
 }

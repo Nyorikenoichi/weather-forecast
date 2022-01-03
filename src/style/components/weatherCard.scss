@@ -10,20 +10,36 @@
   background: $background-dark;
 }
 
-.card-icon {
-  font-size: 10em;
-  color: #8bcae9;
-}
-
 .card-title {
   font-weight: 500;
   line-height: 1.2;
 }
 
-.card-body {
+.card-icon {
+  font-size: 10em;
+  color: #8bcae9;
+
+  &:hover {
+    animation: shake 1s;
+    animation-iteration-count: 1;
+  }
+}
+
+.card-description {
   width: 70%;
+  height: 50px;
+  border: none;
   border-radius: 10px;
+  background-color: #8bcae9;
   color: $text-contrast;
   text-align: center;
-  background-color: #8bcae9;
+  font-size: 1em;
+  transition: 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #9ed4ee;
+  }
 }
+
+
