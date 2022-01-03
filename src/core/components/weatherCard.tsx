@@ -5,14 +5,12 @@ export default function WeatherCard(props: weatherCardProps): JSX.Element {
   const iconURL = 'owf owf-'+ props.day.iconId +' owf-5x card-icon';
 
   return (
-    <div className='column'>
-      <div className="card">
-        <h3 className="card-title">{props.day.weekday}</h3>
-        <i className={iconURL}/>
-        <h2 className="card-temperature">{Math.round(props.day.temperature)} °C</h2>
-        <div className="card-body">
-          <p className="card-text">{props.day.weatherDescription}</p>
-        </div>
+    <div className="card">
+      <h3 className="card-title">{props.day.weekday}</h3>
+      <i className={iconURL}/>
+      <h2 className="card-temperature">{Math.round(props.day.temperature)} °C</h2>
+      <div className="card-body">
+        <p className="card-text">{props.day.weatherDescription}</p>
       </div>
     </div>
   );
