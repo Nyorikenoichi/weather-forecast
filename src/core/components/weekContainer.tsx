@@ -32,11 +32,8 @@ export default function WeekContainer(): JSX.Element {
   };
 
   return (
-    <div className="container">
-      <h1 className="title">5-Day Forecast.</h1>
-      <div className="row">
-        {formatCards()}
-      </div>
-    </div>
+   <div className="weekContainer">
+     {formatCards()}
+   </div>
   );
 }
