@@ -10,12 +10,11 @@ export default function WeekContainer(): JSX.Element {
 
   useEffect(() => {
     getData(Urls.weatherURL).then(data => {
+      console.log(data);
       const convertedData = convertBackendData(data);
       setDays(filterDays(convertedData));
       setWeatherByHours(groupDays(convertedData));
-      console.log(filterDays(convertedData));
-      console.log(groupDays(convertedData));
-    });
+     });
   }, []);
 
   async function getData(url: string) {
