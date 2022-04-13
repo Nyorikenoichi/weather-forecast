@@ -1,2 +1,2 @@
 # weather-forecast
-personal project to try our useEffect hook and gain more experience with react
+Personal project to try out React hooks and gain more experience with react in general
